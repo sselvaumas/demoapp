@@ -2,3 +2,15 @@ h2.story-title {
 	white-space: normal;
 	height: 3.6em;
 }
+
+a.item {
+    background-color: #ecf2f8 !important;
+    text-decoration: none;
+}
+
+.button.button-assertive {
+    border-color: transparent;
+    background-color: #cf7926;
+    color: #fff;
+}
+

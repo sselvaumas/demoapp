@@ -7,7 +7,14 @@ app.controller('RedditCtrl', function($http, $scope) {
   $scope.stories = [];
 
   $scope.record = function() {
-    var recognition = new SpeechRecognition();
+    var recognition = null;
+    if(('SpeechRecognition' in window)){
+      recognition = new SpeechRecognition();
+    }
+    if(('webkitSpeechRecognition' in window)){
+      recognition = new webkitSpeechRecognition();
+    }
+    
     recognition.onresult = function(event) {
         if (event.results.length > 0) {
             var params = {};
