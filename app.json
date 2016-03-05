@@ -1,0 +1,7 @@
+{
+	"name":"Ionic Demoapp to Heroku",
+	"description":"Demo for speech synthesis",
+	"repository":"https://github.com/skumaran123/demoapp",
+	"logo":"https://github.com/skumaran123/demoapp",
+	"keywords":["ionic"]
+}

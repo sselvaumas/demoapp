@@ -16,13 +16,14 @@
   </head>
   <body ng-app="myreddit" ng-controller="RedditCtrl">
     <ion-pane>
-      <ion-header-bar class="bar-positive">
-        <h1 class="title">/r/Android</h1>
+      <ion-header-bar class="bar bar-calm">
+        <h1 class="title">Speech Recognition in Android</h1>
+        <button class="button button-balanced ion-mic-a" ng-click="record()">
+          Speak
+        </button>
       </ion-header-bar>
       <ion-content>
-       <button class="button button-full button-positive" ng-click="record()">
-          Record
-        </button>
+       
        <ion-refresher pulling-text="Pull to refresh..."
           on-refresh="loadNewerStories()">
         </ion-refresher>
